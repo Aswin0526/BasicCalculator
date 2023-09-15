@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="home.js"></script>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body style="background-color: rgb(23, 22, 22); margin-top: 30px">
+    <center>
+      <div class="calculator col-lg-5 container">
+        <div class="container-fluid">
+          <div class="row">
+            <div
+              class="col-lg-12"
+              style="
+                padding-top: 10px;
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-bottom: 15px;
+              "
+            >
+              <input class="col-lg-12" type="text" id="Result" disabled />
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid" id="row1">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <input type="button" value="1" onclick="display('1')" />
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <input type="button" value="2" onclick="display('2')" />
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <input type="button" value="3" onclick="display('3')" />
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <input type="button" value="/" onclick="display('/')" />
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid" id="row2">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <input type="button" value="4" onclick="display('4')" />
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <input type="button" value="5" onclick="display('5')" />
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <input type="button" value="6" onclick="display('6')" />
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <input type="button" value="-" onclick="display('-')" />
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid" id="row3">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <input type="button" value="7" onclick="display('7')" />
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <input type="button" value="8" onclick="display('8')" />
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <input type="button" value="9" onclick="display('9')" />
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <input type="button" value="+" onclick="display('+')" />
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid" id="row4">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <input type="button" value="." onclick="display('.')" />
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <input type="button" value="0" onclick="display('0')" />
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <input type="button" value="Clear" onclick="deleteitem()" />
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <input type="button" value="*" onclick="display('*')" />
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid" id="row5">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <input type="button" value="A" onclick="clearAll()" />
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <input type="button" value="(" onclick='display("(")' />
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <input type="button" value=")" onclick='display(")")' />
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <input type="button" value="%" onclick="display('%')" />
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div
+              class="col-lg-12"
+              style="
+                padding-top: 10px;
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-bottom: 15px;
+              "
+            >
+              <input
+                class="col-lg-12"
+                type="button"
+                value="="
+                id="Submit"
+                style="
+                  background-color: red;
+                  color: black;
+                  height: 50px;
+                  border: none;
+                  width: 100%;
+                "
+                onclick="calculate()"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </center>
+  </body>
+</html>
